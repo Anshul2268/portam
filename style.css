@@ -10,7 +10,9 @@
     background: #ffffff;
     color: #333;
   }
-
+html,body{
+  overflow-x: hidden;
+}
   body {
     font-size: 16px; /* readable on small screens */
     line-height: 1.5;
