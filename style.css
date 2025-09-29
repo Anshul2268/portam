@@ -7,11 +7,12 @@
 
   body {
     font-family: 'Poppins', sans-serif;
-    background: #ffffff;
+    background:#f9fafb ;
     color: #333;
   }
 html,body{
   overflow-x: hidden;
+   scroll-behavior: smooth;
 }
   body {
     font-size: 16px; /* readable on small screens */
@@ -134,11 +135,67 @@ html,body{
 
 }
 .image img{
+  width: 250px;
+  height: 250px;
+  top: -150px;
+  left: 65px;
+  border-radius: 50%;
+  right: -60px;
+  position: relative;
+}
+.icon{
+  position: relative;
+  top: -250px;
+}
+.circle{
+  position: relative;
   width: 300px;
   height: 300px;
-  bottom: -100px;
+  bottom: -120px;
   right: -40px;
-  position: relative;
+  background: linear-gradient(#33ccff,#ff0066);
+  border-radius: 50%;
+  animation: animate 0.5s linear infinite;
+}
+@keyframes animate {
+  from {
+    transform: rotate(0deg);
+  }
+  to{
+    transform: rotate(360deg);
+  }
+}{
+  position:absolute ;
+  bottom: -200px;
+}
+.circle:after{
+  content: '';
+  position: absolute;
+  top: 35px;
+  right: 35px;
+  bottom: 35px;
+  left: 35px;
+  border-radius: 50%;
+  background-color: black;
+}
+.circle span{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#35ccff,#f2b5cd);
+  border-radius: 50%;
+}
+.circle span:nth-child(1){
+  filter: blur(5px);
+}
+.circle span:nth-child(2){
+  filter: blur(10px);
+}
+.circle span:nth-child(3){
+  filter: blur(20px);
+}
+.circle span:nth-child(4){
+  filter: blur(55px);
 }
 .name{
   font-size: 30px;
@@ -148,10 +205,19 @@ html,body{
   bottom: -33px;
   font-family:"Open Sans", sans-serif;
 }
+.Tagline p{
+  position: relative;
+  top: -650px;
+  left: 25px;
+}
 .intro {
   position: relative;
   right: -70px;
-  bottom: -100px;
+  top: -140px;
+}
+.btn{
+  position: relative;
+  top: -250px;
 }
 .btn1{
   background-color: #ffffff;
@@ -281,6 +347,10 @@ font-size: 25px;
   font-size: 40px;
   left: -25px;
   position: relative;
+}
+.mmg #jj{
+  position: relative;
+  right: -80px;
 }
 .box{
   background-color: #ffffff;
@@ -593,49 +663,9 @@ text-align: center;
   display: block;
   margin-bottom: 10px;
 }
-ChatGPT said:
-
-Got it 👍 If you want a simple footer with only a disclaimer, you can skip the social icons and just add text at the bottom.
-
-Here’s a clean setup:
-
-HTML
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Footer Disclaimer</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-
-  <div class="content">
-    <h1>Welcome to My Website</h1>
-    <p>This is your main content area.</p>
-  </div>
-
-  <!-- Footer Disclaimer -->
-  <footer>
-    <p class="disclaimer">
-      Disclaimer: The content on this website is for informational purposes only and may contain errors or inaccuracies. Use at your own risk.
-    </p>
-  </footer>
-
-</body>
-</html>
-
-CSS (style.css)
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-}
 
 .content {
-  flex: 1; /* pushes footer to bottom */
+  flex: 1; 
   padding: 20px;
 }
 .content {
@@ -664,5 +694,142 @@ footer{
 .mivo span{
   position: relative;
   right: -110px;
+}
+body{
+  align-items: center;
+}
+.Graphic{
+   background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  border: #000000 solid 1px;
+  position: relative;
+  bottom: -365px;
+  right: -10px;
+}
+.Graphic h1{
+  font-size: 25px;
+   opacity: 0.8;
+   position: relative;
+   right: -60px;
+   bottom: -20px;
+}
+.icon-text {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  bottom: -50px;
+  right: -60px;
+  font-size: 30px;
+}
+
+.icon1{
+  width: 50px;
+  height: 50px;
+}
+.icon-text2 {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  position: relative;
+  bottom: -70px;
+  right: -55px;
+  font-size: 30px;
+}
+
+.icon2 {
+  width: 60px;
+  height: 60px;
+}
+.icon-text3 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: -90px;
+  right: -60px;
+  font-size: 30px;
+}
+.icon3{
+  width: 60px;
+  height: 60px;
+}
+.Services{
+   background-color: #ffffff;
+  width: 350px;
+  height: 350px;
+  border-radius: 30px;
+  border: #000000 solid 1px;
+  position: relative;
+  bottom: -390px;
+  right: -10px;
+}
+.Services h1{
+ font-size: 18px;
+   opacity: 0.8;
+   position: relative;
+   right: -30px;
+   bottom: -20px;
+}
+.icon-text4 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: -70px;
+  right: -20px;
+  font-size: 25px;
+}
+.icon4{
+  width: 60px;
+  height: 40px;;
+}
+.icon-text5 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: -90px;
+  right: -25px;
+  font-size: 25px;
+}
+.icon5{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.icon-text6 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: -100px;
+  right: -30px;
+  font-size: 25px;
+}
+.icon6{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.icon-text7 {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  bottom: -100px;
+  right: -30px;
+  font-size: 25px;
+}
+.icon7{
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+.ser{
+  position: relative;
+  top: -20px;
 }
 }
